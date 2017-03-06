@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="content" method="upgrade">
+    <name>Piwik Opt-out</name>
+    <version>1.0.0</version>
+    <creationDate>2017-01-16</creationDate>
+    <license>http://www.gnu.org/licenses/gpl</license>
+    <copyright>Copyright 2017 Christian Baur. All rights reserved.</copyright>
+    <author>Christian Baur</author>
+    <authorEmail>c.baur@i-san.de</authorEmail>
+    <authorUrl>https://www.i-san.de/</authorUrl>
+    <description></description>
+    <files>
+        <filename plugin="piwikoptout">piwikoptout.php</filename>
+        <filename plugin="piwikoptout">index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="piwikoptout" label="Piwik">
+                <field name="piwik_url" type="text" required="true" size="100" label="Piwik URL" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
